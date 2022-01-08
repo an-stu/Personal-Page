@@ -27,7 +27,7 @@ I'm trying my best to battle with Lord Voldemort, the evil Wizard that we all fe
 ## 教育经历
 
 - 2020.09~  就读于中国科学技术大学少年班学院 物理专业
-- 2018.09~2020.07 江西省吉水中学
+- 2018.09~2020.07 就读于江西省吉水中学
 
 ## 工作
   [-> 查看全部](/projects/)
