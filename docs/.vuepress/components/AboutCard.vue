@@ -27,7 +27,7 @@
       <div class="socials">
         <div v-for="item in data.socials">
           <a :href="item.link" target="_blank">
-            <img :src="'/icons/'+item.title+'.svg'" :alt="item.title"
+            <img :src="$withBase('/icons/'+item.title+'.svg')" :alt="item.title"
             :title="item.title" />
           </a>
         </div>

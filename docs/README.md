@@ -1,53 +1,55 @@
 ---
 pageClass: home-page
 # some data for the components
-
-name: Harry Potter
+name: 刘子安
 profile: /profile.jpg
 
 socials:
   - title: github
-    icon: "/icons/github.svg"
-    link: https://github.com/mtobeiyf
-  - title: linkedin
-    icon: "/icons/linkedin-mono.svg"
-    link: https://www.linkedin.com
-  - title: instagram
-    icon: "/icons/instagram-mono.svg"
-    link: https://www.instagram.com
+    icon: "/~liuzian/home/icons/github.svg"
+    link: https://github.com/an-stu
 
-cv: https://en.wikipedia.org/wiki/Harry_Potter
-bio: Student at Hogwarts School
-email: harry (at) hogwarts (dot) edu
+bio: Student at USTC
+email: liuzian@mail.ustc.edu.cn
+qq: qq:1290254857
 ---
 
 <ProfileSection :frontmatter="$page.frontmatter" />
 
-## About Me
+<!-- ## About Me
 
 I attended [Hogwarts School of Witchcraft and Wizardry](https://en.wikipedia.org/wiki/Hogwarts) to study witchcraft, supervised by **Dumbledore** and other professors. 
 
 I'm trying my best to battle with Lord Voldemort, the evil Wizard that we all fear. My research area includes Defence Against the Dark Arts and other magic. :dizzy:
+ -->
 
 
-## News
+## 教育经历
 
-- [Sept 1991] Attended Hogwarts
-- [July 1980] Born in Godric's Hollow, West Country, England, Great Britain
+- 2020.09~  就读于中国科学技术大学少年班学院 物理专业
+- 2018.09~2020.07 江西省吉水中学
+
+## 工作
+  [-> 查看全部](/projects/)
+
+<ProjectCard image="/projects/BilibiliScrapy.png" hideBorder=true>
+
+**BilibiliScrapy**[[Github](https://github.com/an-stu/BilibiliScrapy)]
+
+基于python的requests的简单爬虫
+
+可以爬取对应的flv视频以及相应的ass弹幕文件
+
+</ProjectCard>
+
+## 学习资料
+[C++ Primer plus 中文版](/~liuzian/books/C++PrimerPlus\.pdf)
 
 
-## Education & Experiences
+<!-- 
+[→ Full list](/projects/) -->
 
-- **Hogwarts School of Witchcraft and Wizardry** <br/>
-Sept 1991 - 1997
-
-
-## Projects
-
-
-[→ Full list](/projects/)
-
-<ProjectCard image="/projects/1.png" hideBorder=true>
+<!-- <ProjectCard image="/projects/1.png" hideBorder=true>
 
   **The Making of Harry Potter's Wand**
 
@@ -67,14 +69,12 @@ Sept 1991 - 1997
 
   [[Link](https://www.google.com)]
 
-</ProjectCard>
+</ProjectCard> -->
 
 
-## Awards & Honors
+<!-- ## Awards & Honors -->
 
-### Contests
 
-- First place in **The Hogwarts House Cup**
 
 
 <!-- Custom style for this page -->

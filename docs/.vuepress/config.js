@@ -1,23 +1,23 @@
 module.exports = {
-  title: "Harry Potter",
-  description: "The description of the site.",
+  title: "个人主页",
+  description: "刘子安的个人主页",
   head: [["link", { rel: "icon", href: `/logo.png` }]],
-  base: "/",
-  dest: "./dist",
+  base: "/~liuzian/home/",
+  dest: "./home/",
 
   themeConfig: {
     search: false,
     nav: [
-      { text: "Home", link: "/" },
-      { text: "About", link: "/about/" },
-      { text: "Projects", link: "/projects/" },
-      { text: "Guide", link: "/guide/" },
-      { text: "GitHub", link: "https://github.com/mtobeiyf/vuepress-homepage" }
+      { text: "主页", link: "/" },
+      { text: "关于", link: "/about/" },
+      { text: "项目", link: "/projects/" },
+      // { text: "Guide", link: "/guide/" },
+      { text: "GitHub", link: "https://github.com/an-stu" }
     ],
     sidebar: {
       '/guide/': genSidebarConfig('Guide')
     },
-    lastUpdated: 'Last Updated'
+    lastUpdated: '最近更新时间',
   },
 
   markdown: {
@@ -40,7 +40,7 @@ function genSidebarConfig (title) {
         'customize',
         'advanced',
       ]
-    }
-  ]
+    },
+  ];
 }
 

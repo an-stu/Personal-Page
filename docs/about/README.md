@@ -1,32 +1,25 @@
 ---
 pageClass: about-page
-description: 'The biography and information about me.'
+description: '刘子安的个人主页'
 avatar: /profile.jpg
-head: 'Harry Potter'
-info: 'Student at Hogwarts School'
-interests: 'Interests: Quidditch and Wizard chess.'
+head: '刘子安'
+info: 'a USTCer'
+interests: '喜欢睡觉、摸鱼打游戏'
 socials:
 - title: github
-  link: https://github.com/mtobeiyf
-- title: linkedin
-  link: https://www.linkedin.com
-- title: instagram
-  link: https://www.instagram.com
+  link: https://github.com/an-stu
 - title: email
-  link: 'mailto:harry[at]gmail.com'
+  link: 'mailto:liuzian@mail.ustc.edu.cn'
 actions:
-- text: Projects
+- text: 项目
   link: /projects/
-- text: Blog
-  link: https://github.com/mtobeiyf
-- text: CV
-  link: /article/
 footer: Made with ♥ by Fing. Powered by VuePress
 ---
 
 <AboutCard :frontmatter="$page.frontmatter" >
 
-I attended [Hogwarts School of Witchcraft and Wizardry](https://en.wikipedia.org/wiki/Hogwarts) to study witchcraft, supervised by **Dumbledore** and other professors. I'm trying my best to battle with Lord Voldemort, the evil Wizard that we all fear. My research area includes Defence Against the Dark Arts and other magic. :dizzy:
+平常会打各种游戏，看看番，也会玩phigros ~~虽然很菜~~
+- [bilibili主页](https://space.bilibili.com/526132913):dizzy:
 
 </AboutCard>
 

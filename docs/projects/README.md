@@ -2,13 +2,27 @@
 pageClass: projects-page
 ---
 
-# Work
+# 工作
 
-Here are some works of mine :books:
 
-## Projects
+<!-- 记录自己的一些工作,有待更新:books: -->
+<ProjectCard image="/projects/BilibiliScrapy.png" hideBorder=true>
 
-<ProjectCard image="/projects/1.png">
+## BilibiliScrapy [[Github](https://github.com/an-stu/BilibiliScrapy)]
+
+**不熟悉编程**可以直接下载对应exe文件[链接](/~liuzian/files/bilibili\.exe)
+
+基于python的requests等模块
+
+可以爬取B站flv视频以及ass弹幕文件
+
+**需要对应cookie**,有大会员的使用相应cookie也可以爬取对应的大会员视频.
+
+所爬取的视频在当前文件夹下.
+
+</ProjectCard>
+
+<!-- <ProjectCard image="/projects/1.png">
 
   Harry P., Hermione G., *et al*
   
@@ -16,21 +30,11 @@ Here are some works of mine :books:
   
   Harry's wand was broken in 1997, but was repaired by him after the 1998 Battle of Hogwarts. Usually the repair of a wand is impossible, but with the use of the Elder Wand it was achievable.
   
-  [[PDF](https://www.google.com)] [[arXiv](https://arxiv.org)]
+  [[PDF](https://www.google.com)] [[arXiv](https://arxiv.org)] -->
 
-</ProjectCard>
+<!-- </ProjectCard> -->
 
-## Publications
 
-<ProjectCard>
-
-  **Harry Potter and the Deathly Hallows**
-  
-  In the epilogue of Deathly Hallows, which is set 19 years after Voldemort's death, Harry and Ginny are a couple and have three children: James Sirius Potter, who has already been at Hogwarts for at least one year, Albus Severus Potter, who is starting his first year there, and Lily Luna Potter, who is two years away from her first year at the school.
-
-  [[Link](https://www.google.com)]
-
-</ProjectCard>
 
 <style lang="stylus">
 
