@@ -12,6 +12,7 @@ module.exports = {
       { text: "关于", link: "/about/" },
       { text: "项目", link: "/projects/" },
       // { text: "Guide", link: "/guide/" },
+      { text: "下载", link: "/downloads/"},
       { text: "GitHub", link: "https://github.com/an-stu" }
     ],
     sidebar: {

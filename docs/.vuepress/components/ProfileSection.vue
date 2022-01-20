@@ -25,10 +25,9 @@
     </div>
   </div>
 </template>
-
 <script>
 export default {
-  props: ['image', 'cv', 'frontmatter'],
+  props: ['image', 'frontmatter'],
 
   computed: {
     data() {

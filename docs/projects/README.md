@@ -4,8 +4,8 @@ pageClass: projects-page
 
 # 工作
 
+记录自己一些微小的工作:book:
 
-<!-- 记录自己的一些工作,有待更新:books: -->
 <ProjectCard image="/projects/BilibiliScrapy.png" hideBorder=true>
 
 ## BilibiliScrapy [[Github](https://github.com/an-stu/BilibiliScrapy)]
