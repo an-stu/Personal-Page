@@ -2,43 +2,23 @@
 pageClass: projects-page
 ---
 
-# 工作
+# 项目
 
-记录自己一些微小的工作:book:
+记录自己做过的一些小项目与工具。
 
 <ProjectCard image="/projects/BilibiliScrapy.png" hideBorder=true>
 
-## BilibiliScrapy [[Github](https://github.com/an-stu/BilibiliScrapy)]
+## BilibiliScrapy [[GitHub](https://github.com/an-stu/BilibiliScrapy)]
 
-**不熟悉编程**可以直接下载对应exe文件[链接](/~liuzian/files/bilibili\.exe)
+基于 Python requests 的命令行爬虫示例。
 
-基于python的requests等模块
-
-可以爬取B站flv视频以及ass弹幕文件
-
-**需要对应cookie**,有大会员的使用相应cookie也可以爬取对应的大会员视频.
-
-所爬取的视频在当前文件夹下.
+支持下载对应视频文件与 ASS 弹幕，适合学习 Cookie 鉴权、请求流程与文件处理。
 
 </ProjectCard>
-
-<!-- <ProjectCard image="/projects/1.png">
-
-  Harry P., Hermione G., *et al*
-  
-  **The Making of Harry Potter's Wand**
-  
-  Harry's wand was broken in 1997, but was repaired by him after the 1998 Battle of Hogwarts. Usually the repair of a wand is impossible, but with the use of the Elder Wand it was achievable.
-  
-  [[PDF](https://www.google.com)] [[arXiv](https://arxiv.org)] -->
-
-<!-- </ProjectCard> -->
-
-
 
 <style lang="stylus">
 
 .projects-page
-  background-color #fafbfc
+  background-color #f7fafe
 
 </style>

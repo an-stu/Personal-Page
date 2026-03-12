@@ -1,7 +1,7 @@
 <template>
   <div class="profile">
     <div v-if="data.profile" class="image">
-      <img :src="$withBase(data.profile)" alt="">
+      <img :src="$withBase(data.profile)" :alt="`${data.name} 的头像`" loading="lazy">
     </div>
     <div class="info">
       <div class="name">
@@ -11,11 +11,10 @@
         <p>{{ data.bio }}</p>
       </div>
       <div class="socials">
-        <div v-for="item in data.socials">
-            <a :href="item.link" target="_blank">
-              <img :src="item.icon" :alt="item.title"
-              :title="item.title" />
-            </a>
+        <div v-for="item in data.socials" :key="item.title">
+          <a :href="item.link" target="_blank" rel="noopener noreferrer">
+            <img :src="$withBase(item.icon)" :alt="item.title" :title="item.title" loading="lazy">
+          </a>
         </div>
       </div>
       <div class="contact">
@@ -27,7 +26,7 @@
 </template>
 <script>
 export default {
-  props: ['image', 'frontmatter'],
+  props: ["frontmatter"],
 
   computed: {
     data() {
@@ -61,7 +60,7 @@ export default {
     .socials
       display flex
       flex-direction row
-      img 
+      img
         width 1.3rem
         margin 0 0.6rem 0 0
         cursor pointer
@@ -78,4 +77,6 @@ export default {
   .profile
     .image
       max-width 100px
+    .info
+      padding-left 1rem
 </style>

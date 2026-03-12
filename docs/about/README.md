@@ -1,34 +1,36 @@
 ---
 pageClass: about-page
-description: '刘子安的个人主页'
+description: 刘子安的个人主页
 avatar: /profile.jpg
-head: '刘子安'
-info: 'a USTCer'
-interests: '喜欢睡觉、摸鱼打游戏'
+head: 刘子安
+info: USTC 本科生 / Physics + Coding
+interests: 游戏、动漫、节奏游戏（Phigros）
 socials:
 - title: github
   link: https://github.com/an-stu
 - title: email
-  link: 'mailto:liuzian@mail.ustc.edu.cn'
+  link: mailto:liuzian@mail.ustc.edu.cn
 actions:
-- text: 项目
+- text: 查看项目
   link: /projects/
-footer: Made with ♥ by Fing. Powered by VuePress
+- text: 学习资料
+  link: /downloads/
 ---
 
 <AboutCard :frontmatter="$page.frontmatter" >
 
-平常会打各种游戏，看看番，也会玩phigros ~~虽然很菜~~
-- [bilibili主页](https://space.bilibili.com/526132913):dizzy:
+平时会把课程作业和兴趣项目整理成可复用的仓库，重点关注实用性和可维护性。
+
+- [Bilibili 主页](https://space.bilibili.com/526132913)
 
 </AboutCard>
 
 <style lang="stylus">
 
 .theme-container.about-page .page
-  background-color #e6ecf0
+  background linear-gradient(160deg, #eaf2ff 0%, #f6fbff 55%, #ffffff 100%)
   min-height calc(100vh)
-  
+
   .last-updated
     display none
 

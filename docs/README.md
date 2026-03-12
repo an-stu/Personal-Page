@@ -1,86 +1,81 @@
 ---
 pageClass: home-page
-# some data for the components
 name: 刘子安
 profile: /profile.jpg
 
 socials:
   - title: github
-    icon: "/~liuzian/home/icons/github.svg"
+    icon: /icons/github.svg
     link: https://github.com/an-stu
 
-bio: Student at USTC
+bio: 中国科学技术大学物理专业本科生，关注编程工具与效率实践。
 email: liuzian@mail.ustc.edu.cn
 qq: qq:1290254857
 ---
 
 <ProfileSection :frontmatter="$page.frontmatter" />
 
+## 简介
+
+目前主要在学习物理与计算机相关技能，习惯把日常学习过程沉淀为可复用的小工具。
 
 ## 教育经历
 
-- 2020.09~  就读于中国科学技术大学少年班学院 物理专业
-- 2018.09~2020.07 就读于江西省吉水中学
+- 2020.09 - 至今：中国科学技术大学，少年班学院，物理专业
+- 2018.09 - 2020.07：江西省吉水中学
 
-## 工作
-  [-> 查看全部](/projects/)
+## 项目精选
+
+[查看全部项目](/projects/)
 
 <ProjectCard image="/projects/BilibiliScrapy.png" hideBorder=true>
 
-**BilibiliScrapy**[[Github](https://github.com/an-stu/BilibiliScrapy)]
+**BilibiliScrapy** [[GitHub](https://github.com/an-stu/BilibiliScrapy)]
 
-基于python的requests的简单爬虫
-
-可以爬取对应的flv视频以及相应的ass弹幕文件
+基于 Python 的命令行工具，可抓取 B 站视频与 ASS 弹幕文件，适合作为网络请求与脚本工具入门练习。
 
 </ProjectCard>
 
 ## 学习资料
 
-[->下载](/downloads/)
-
-
-
-<!-- Custom style for this page -->
+[进入下载页](/downloads/)
 
 <style lang="stylus">
 
 .theme-container.home-page .page
-  font-size 14px
-  font-family "lucida grande", "lucida sans unicode", lucida, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  p
-    margin 0 0 0.5rem
-  p, ul, ol
-    line-height normal
-  a
-    font-weight normal
-  .theme-default-content:not(.custom) > h2
-    margin-bottom 0.5rem
-  .theme-default-content:not(.custom) > h2:first-child + p
-    margin-top 0.5rem
-  .theme-default-content:not(.custom) > h3
-    padding-top 4rem
+  font-size 15px
+  font-family "PingFang SC", "Noto Sans SC", "Helvetica Neue", Helvetica, Arial, sans-serif
+  background linear-gradient(180deg, #f8fbff 0%, #ffffff 28%)
 
-  /* Override */
+  p
+    margin 0 0 0.7rem
+
+  p, ul, ol
+    line-height 1.65
+
+  a
+    font-weight 500
+
+  .theme-default-content:not(.custom) > h2
+    margin-bottom 0.7rem
+
+  .theme-default-content:not(.custom) > h3
+    padding-top 3.4rem
+
+  .profile
+    padding 1rem
+    border-radius 14px
+    background #ffffff
+    box-shadow 0 8px 24px rgba(25, 79, 153, 0.08)
+
   .md-card
-    margin-top 0.5em
-    .card-image
-      padding 0.2rem
-      img
-        max-width 120px
-        max-height 120px
-    .card-content p
-      -webkit-margin-after 0.2em
+    margin-top 0.8em
+    border 1px solid #e8edf6
+    border-radius 12px
 
 @media (max-width: 419px)
   .theme-container.home-page .page
     p, ul, ol
-      line-height 1.5
-
-    .md-card
-      .card-image
-        img 
-          width 100%
-          max-width 400px
+      line-height 1.55
 
 </style>

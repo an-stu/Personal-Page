@@ -1,8 +1,13 @@
+const repoName = (process.env.GITHUB_REPOSITORY || "").split("/")[1] || "";
+const base =
+  process.env.BASE_PATH ||
+  (repoName ? `/${repoName}/` : "/");
+
 module.exports = {
   title: "个人主页",
   description: "刘子安的个人主页",
-  head: [["link", { rel: "icon", href: `/logo.png` }]],
-  base: "/~liuzian/home/",
+  head: [["link", { rel: "icon", href: `/profile.jpg` }]],
+  base,
   dest: "./home/",
 
   themeConfig: {
@@ -15,9 +20,6 @@ module.exports = {
       { text: "下载", link: "/downloads/"},
       { text: "GitHub", link: "https://github.com/an-stu" }
     ],
-    sidebar: {
-      '/guide/': genSidebarConfig('Guide')
-    },
     lastUpdated: '最近更新时间',
   },
 
@@ -29,19 +31,3 @@ module.exports = {
     }
   }
 };
-
-function genSidebarConfig (title) {
-  return [
-    {
-      title,
-      collapsable: false,
-      children: [
-        '',
-        'getting-started',
-        'customize',
-        'advanced',
-      ]
-    },
-  ];
-}
-

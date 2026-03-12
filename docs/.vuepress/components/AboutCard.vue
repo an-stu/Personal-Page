@@ -1,18 +1,18 @@
 <template>
   <div class="about-card">
     <div class="avatar">
-      <img :src="$withBase(data.avatar)" alt="">
+      <img :src="$withBase(data.avatar)" :alt="`${data.head} 的头像`" loading="lazy">
     </div>
     <div class="card">
       <div class="bio">
         <div class="head">
           <span>
-            {{data.head}}
+            {{ data.head }}
           </span>
         </div>
         <div class="info">
           <span>
-            {{data.info}}
+            {{ data.info }}
           </span>
         </div>
         <div class="description">
@@ -21,30 +21,29 @@
       </div>
       <div class="interests">
         <span>
-          {{data.interests}}
+          {{ data.interests }}
         </span>
       </div>
       <div class="socials">
-        <div v-for="item in data.socials">
-          <a :href="item.link" target="_blank">
-            <img :src="$withBase('/icons/'+item.title+'.svg')" :alt="item.title"
-            :title="item.title" />
+        <div v-for="item in data.socials" :key="item.title">
+          <a :href="item.link" target="_blank" rel="noopener noreferrer">
+            <img :src="$withBase('/icons/' + item.title + '.svg')" :alt="item.title" :title="item.title" loading="lazy">
           </a>
         </div>
       </div>
       <div class="actions">
-        <div v-for="item in data.actions">
-          <a :href="item.link" class="button"
-              :target="item.link.startsWith('/')?'':'_blank'">
-            {{item.text}}
+        <div v-for="item in data.actions" :key="item.text">
+          <a
+            :href="item.link"
+            class="button"
+            :target="item.link.startsWith('/') ? '' : '_blank'"
+            :rel="item.link.startsWith('/') ? '' : 'noopener noreferrer'"
+          >
+            {{ item.text }}
           </a>
         </div>
       </div>
     </div>
-
-    <!-- <div class="footer" v-if="data.footer">
-      {{ data.footer }}
-    </div> -->
   </div>
 </template>
 
@@ -70,7 +69,7 @@ export default {
   flex-direction column
   align-items center
 
-  .avatar 
+  .avatar
     position relative
     z-index 1
     img
@@ -86,12 +85,12 @@ export default {
     position relative
     top -75px
     padding-top 75px
-    margin-left auto 
-    margin-right auto 
+    margin-left auto
+    margin-right auto
     background #fff
-    box-shadow 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow 0 4px 8px 0 rgba(0,0,0,0.2)
     border-radius 0.3rem
-    text-align center 
+    text-align center
     .bio
       padding 1em
       .head
@@ -117,18 +116,18 @@ export default {
     .socials
       border-top 1px solid rgba(34,36,38,.1)
       display flex
-      flex-direction: row
-      justify-content: center
-      flex-wrap wrap 
-      img 
+      flex-direction row
+      justify-content center
+      flex-wrap wrap
+      img
         width 32px
         margin 1em
         cursor pointer
     .actions
       border-top 1px solid rgba(34,36,38,.1)
       display flex
-      flex-direction: row
-      justify-content: center
+      flex-direction row
+      justify-content center
       flex-wrap wrap
       .button
         background-color $btnBgColor
@@ -143,17 +142,17 @@ export default {
         text-align center
         text-decoration none
         display inline-block
-        -webkit-transition-duration 0.4s /* Safari */
+        -webkit-transition-duration 0.4s
         transition-duration 0.4s
         cursor pointer
         &:hover
           background-color $btnHvColor
   .footer
-      padding 1rem
-      font-weight 200
-      font-size 1rem
-      text-align center
-      color lighten($footColor, 25%)
-      margin-top auto
+    padding 1rem
+    font-weight 200
+    font-size 1rem
+    text-align center
+    color lighten($footColor, 25%)
+    margin-top auto
 
 </style>
