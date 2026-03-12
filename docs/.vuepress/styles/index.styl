@@ -1,3 +1,32 @@
 // disable outbound link icon
 .icon.outbound
   display none
+
+.site-visitor-counter
+  position fixed
+  right 12px
+  bottom 300px
+  z-index 40
+  background rgba(255, 255, 255, 0.95)
+  border 1px solid #dfe8f3
+  border-radius 10px
+  box-shadow 0 8px 20px rgba(0, 0, 0, 0.08)
+  padding 8px 10px
+  min-width 120px
+  color #2c3e50
+  font-size 12px
+  line-height 1.5
+
+  .counter-title
+    font-weight 700
+    margin-bottom 2px
+
+  .counter-line
+    white-space nowrap
+
+@media (max-width: 719px)
+  .site-visitor-counter
+    right 8px
+    bottom 220px
+    font-size 11px
+    min-width 108px
